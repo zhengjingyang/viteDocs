@@ -59,6 +59,10 @@ export default {
           { text: "node", link: "" },
         ],
       },
+      {
+        text: '工具',
+        link: '/tools/'
+      }
     ],
     sidebar: {
       "/node/": [
