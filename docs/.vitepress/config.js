@@ -3,7 +3,7 @@ export default {
   title: "vitepress", // 博客的标题
   description: "xxxx 的个人博客", // 博客的介绍
   base: "/viteDocs/", // 这里填github的仓库名称
-  layout: 'home',
+  layout: "home",
   lastUpdated: true, // 最后更新时间
   cleanUrls: true,
   metaChunk: true,
@@ -60,9 +60,18 @@ export default {
         ],
       },
       {
-        text: '工具',
-        link: '/tools/'
-      }
+        text: "工具",
+        link: "/tools/",
+      },
+      {
+        text: "gis",
+        items: [
+          {
+            text: "Cesium",
+            link: "/gis/cesium",
+          },
+        ],
+      },
     ],
     sidebar: {
       "/node/": [
@@ -99,6 +108,18 @@ export default {
           ],
         },
       ],
+      "/gis/cesium/": [
+        {
+          text: "Cesium",
+          collapsible: true,
+          items: [
+            {
+              text: "Demo",
+              link: "/gis/cesium/demo",
+            },
+          ]
+        }
+      ]
     },
   },
 };
