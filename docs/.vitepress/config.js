@@ -27,38 +27,29 @@ export default {
           // 可以配置成下拉
           { text: "Node", link: "/node" },
           {
-            text: "elementplus",
-            items: [
-              // 可以配置成下拉
-              {
-                text: "react",
-                link: "/node",
-              },
-              { text: "elementplus", link: "/node" },
-              { text: "node", link: "/node" },
-            ],
+            text: "Vue",
+            link: "/vue",
           },
-          { text: "node", link: "/node" },
         ],
       },
-      {
-        text: "java",
-        items: [
-          // 可以配置成下拉
-          { text: "react", link: "" },
-          { text: "elementplus", link: "" },
-          { text: "node", link: "" },
-        ],
-      },
-      {
-        text: "服务端",
-        items: [
-          // 可以配置成下拉
-          { text: "react", link: "" },
-          { text: "elementplus", link: "" },
-          { text: "node", link: "" },
-        ],
-      },
+      // {
+      //   text: "java",
+      //   items: [
+      //     // 可以配置成下拉
+      //     { text: "react", link: "" },
+      //     { text: "elementplus", link: "" },
+      //     { text: "node", link: "" },
+      //   ],
+      // },
+      // {
+      //   text: "服务端",
+      //   items: [
+      //     // 可以配置成下拉
+      //     { text: "react", link: "" },
+      //     { text: "elementplus", link: "" },
+      //     { text: "node", link: "" },
+      //   ],
+      // },
       {
         text: "工具",
         link: "/tools/",
@@ -87,26 +78,37 @@ export default {
               text: "Npm",
               link: "/node/npm",
             },
-            {
-              text: "test2",
-              items: [
-                {
-                  text: "Level 3",
-                  link: "",
-                },
-                {
-                  text: "Level 3-2",
-                  items: [
-                    {
-                      text: "Level 4",
-                      link: "",
-                    },
-                  ],
-                },
-              ],
-            },
+            // {
+            //   text: "test2",
+            //   items: [
+            //     {
+            //       text: "Level 3",
+            //       link: "",
+            //     },
+            //     {
+            //       text: "Level 3-2",
+            //       items: [
+            //         {
+            //           text: "Level 4",
+            //           link: "",
+            //         },
+            //       ],
+            //     },
+            //   ],
+            // },
           ],
         },
+      ],
+      "/vue/": [
+        {
+          text: "Vue",
+          items: [
+            {
+              text: '更新部署后通知用户刷新',
+              link: "/vue/更新部署后通知用户刷新"
+            }
+          ]
+        }
       ],
       "/gis/cesium/": [
         {
@@ -117,9 +119,9 @@ export default {
               text: "Demo",
               link: "/gis/cesium/demo",
             },
-          ]
-        }
-      ]
+          ],
+        },
+      ],
     },
   },
 };
