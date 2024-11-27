@@ -1,4 +1,5 @@
 // config.js
+import sidebar from './sidebar'
 export default {
   title: "vitepress", // 博客的标题
   description: "xxxx 的个人博客", // 博客的介绍
@@ -24,32 +25,17 @@ export default {
       {
         text: "前端",
         items: [
-          // 可以配置成下拉
           { text: "Node", link: "/node" },
           {
             text: "Vue",
             link: "/vue",
           },
+          {
+            text: "Uniapp",
+            link: "/uniapp",
+          },
         ],
       },
-      // {
-      //   text: "java",
-      //   items: [
-      //     // 可以配置成下拉
-      //     { text: "react", link: "" },
-      //     { text: "elementplus", link: "" },
-      //     { text: "node", link: "" },
-      //   ],
-      // },
-      // {
-      //   text: "服务端",
-      //   items: [
-      //     // 可以配置成下拉
-      //     { text: "react", link: "" },
-      //     { text: "elementplus", link: "" },
-      //     { text: "node", link: "" },
-      //   ],
-      // },
       {
         text: "工具",
         link: "/tools/",
@@ -64,64 +50,6 @@ export default {
         ],
       },
     ],
-    sidebar: {
-      "/node/": [
-        {
-          text: "Node",
-          collapsible: true,
-          items: [
-            {
-              text: "Nvm",
-              link: "/node/nvm",
-            },
-            {
-              text: "Npm",
-              link: "/node/npm",
-            },
-            // {
-            //   text: "test2",
-            //   items: [
-            //     {
-            //       text: "Level 3",
-            //       link: "",
-            //     },
-            //     {
-            //       text: "Level 3-2",
-            //       items: [
-            //         {
-            //           text: "Level 4",
-            //           link: "",
-            //         },
-            //       ],
-            //     },
-            //   ],
-            // },
-          ],
-        },
-      ],
-      "/vue/": [
-        {
-          text: "Vue",
-          items: [
-            {
-              text: '更新部署后通知用户刷新',
-              link: "/vue/更新部署后通知用户刷新"
-            }
-          ]
-        }
-      ],
-      "/gis/cesium/": [
-        {
-          text: "Cesium",
-          collapsible: true,
-          items: [
-            {
-              text: "Demo",
-              link: "/gis/cesium/demo",
-            },
-          ],
-        },
-      ],
-    },
+    sidebar: sidebar
   },
 };
