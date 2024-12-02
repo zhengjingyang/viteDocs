@@ -37,10 +37,6 @@ export default {
         ],
       },
       {
-        text: "工具",
-        link: "/tools/",
-      },
-      {
         text: "gis",
         items: [
           {
@@ -48,6 +44,14 @@ export default {
             link: "/gis/cesium",
           },
         ],
+      },
+      {
+        text: "工具",
+        link: "/tools/",
+      },
+      {
+        text: "服务端",
+        link: "/service/",
       },
     ],
     sidebar: sidebar

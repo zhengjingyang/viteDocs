@@ -66,5 +66,17 @@ export default {
         }
       ]
     }
-  ]
+  ],
+  "/service/": [
+    {
+      text: "服务端",
+      collapsible: true,
+      items: [
+        {
+          text: "常用软件安装",
+          link: "/service/常用软件安装"
+        }
+      ]
+    }
+  ],
 };
