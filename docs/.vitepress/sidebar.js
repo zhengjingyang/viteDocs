@@ -67,14 +67,34 @@ export default {
       ]
     }
   ],
-  "/service/": [
+  "/gis/arcgis/": [
+    {
+      text: "Arcgis",
+      collapsible: true,
+      items: [
+        {
+          text: "在Vue使用",
+          link: "/gis/arcgis/index"
+        },
+        {
+          text: "加载天地图",
+          link: "/gis/cesium/demo"
+        }
+      ]
+    }
+  ],
+  "/yunwei/": [
     {
       text: "服务端",
       collapsible: true,
       items: [
         {
+          text: "Ubuntu常用命令",
+          link: "/yunwei/"
+        },
+        {
           text: "常用软件安装",
-          link: "/service/常用软件安装"
+          link: "/yunwei/常用软件安装"
         }
       ]
     }
