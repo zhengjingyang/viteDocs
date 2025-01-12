@@ -4,6 +4,10 @@ export default [
     text: "前端",
     items: [
       {
+        text: "HTML",
+        link: "/html",
+      },
+      {
         text: "Vue",
         link: "/vue",
       },
@@ -19,6 +23,10 @@ export default [
       {
         text: "Cesium",
         link: "/gis/cesium",
+      },
+      {
+        text: "Arcgis",
+        link: "/gis/arcgis",
       },
     ],
   },
