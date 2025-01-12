@@ -5,7 +5,7 @@ hero:
   text: 个人技术积累与分享
   tagline: 包含Vue、Node.js、GIS等技术文档
   image:
-    src: ./assets/images/logo.webp
+    src: http://124.70.135.97:9002/myfiles/vitepress/logo.webp
     alt: Logo
   actions:
     - theme: brand
