@@ -28,6 +28,10 @@ export default [
         text: "Arcgis",
         link: "/gis/arcgis",
       },
+      {
+        text: 'mapbox',
+        link: "/gis/mapbox"
+      }
     ],
   },
   {
