@@ -12,6 +12,10 @@ export default [
         link: "/vue",
       },
       {
+        text: "Vue3",
+        link: "/vue/vue3",
+      },
+      {
         text: "Uniapp",
         link: "/uniapp",
       },

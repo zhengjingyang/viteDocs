@@ -21,6 +21,12 @@ export default {
       items: generateSidebarItems("vue")
     }
   ],
+  "/vue/vue3/": [
+    {
+      text: "Vue3",
+      items: generateSidebarItems("vue/vue3")
+    }
+  ],
   "/uniapp/": [
     {
       text: "uniapp",
