@@ -1,4 +1,4 @@
-# webview与H5双向通信
+# webview与H5双向通信（APP适用）
 
 
 

@@ -8,6 +8,13 @@ export default {
       items: generateSidebarItems("node")
     }
   ],
+  "/python/": [
+    {
+      text: "Python",
+      collapsible: true,
+      items: generateSidebarItems("python")
+    }
+  ],
   "/html/": [
     {
       text: "HTML",

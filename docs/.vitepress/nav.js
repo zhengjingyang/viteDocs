@@ -5,49 +5,52 @@ export default [
     items: [
       {
         text: "HTML",
-        link: "/html",
+        link: "/html"
       },
       {
         text: "Vue",
-        link: "/vue",
+        link: "/vue"
       },
       {
         text: "Vue3",
-        link: "/vue/vue3",
+        link: "/vue/vue3"
       },
       {
         text: "Uniapp",
-        link: "/uniapp",
-      },
-    ],
+        link: "/uniapp"
+      }
+    ]
   },
   {
     text: "gis",
     items: [
       {
         text: "Cesium",
-        link: "/gis/cesium",
+        link: "/gis/cesium"
       },
       {
         text: "Arcgis",
-        link: "/gis/arcgis",
+        link: "/gis/arcgis"
       },
       {
-        text: 'mapbox',
+        text: "mapbox",
         link: "/gis/mapbox"
       }
-    ],
+    ]
   },
   {
     text: "服务端",
-    items: [{ text: "Node", link: "/node" }],
+    items: [
+      { text: "Node", link: "/node" },
+      { text: "Python", link: "/python" }
+    ]
   },
   {
     text: "工具",
-    link: "/tools/",
+    link: "/tools/"
   },
   {
     text: "运维",
-    link: "/yunwei/",
-  },
+    link: "/yunwei/"
+  }
 ];
