@@ -1,5 +1,8 @@
 # Python
 
+## Python安装教程 参考
+[Python安装教程](https://blog.csdn.net/qq_53280175/article/details/121107748)
+
 ## pip 使用国内镜像源
 默认情况下 pip 使用的是国外的镜像，在下载的时候速度非常慢，本文我们介绍使用国内清华大学的源，地址为：
 
