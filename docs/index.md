@@ -10,7 +10,7 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /vue/
+      link: /start/
     - theme: alt
       text: GitHub
       link: https://github.com/zhengjingyang?tab=stars

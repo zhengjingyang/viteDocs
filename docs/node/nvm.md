@@ -1,3 +1,7 @@
+---
+title: nvm
+order: 2
+---
 # NNM
 
 ### 切换镜像源

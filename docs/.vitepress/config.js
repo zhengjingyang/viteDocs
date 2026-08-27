@@ -1,56 +1,76 @@
-// config.js
-import sidebar from "./sidebar";
-import navData from "./nav";
+import sidebar from './sidebar'
+import nav from './nav'
+
 export default {
-  title: "vitepress", // 博客的标题
-  description: "xxxx 的个人博客", // 博客的介绍
-  base: "/viteDocs/", // 这里填github的仓库名称
-  layout: "home",
-  lastUpdated: true, // 最后更新时间
+  title: '前端技术文档',
+  description: 'Vue、Node.js、GIS、运维等个人技术笔记',
+  base: '/viteDocs/',
+  lastUpdated: true,
   cleanUrls: true,
   metaChunk: true,
+  markdown: {
+    lineNumbers: true,
+    theme: {
+      light: 'github-light',
+      dark: 'github-dark'
+    }
+  },
   themeConfig: {
+    logo: 'https://img1.lookpic.cn/2025/01/12/logo5368f43d68d0a270.webp',
+    siteTitle: '前端技术文档',
+    nav,
+    sidebar,
     search: {
-      provider: "local",
+      provider: 'local',
       options: {
+        detailedView: true,
         translations: {
           button: {
             buttonText: '搜索文档',
             buttonAriaLabel: '搜索文档'
           },
           modal: {
-            noResultsText: '无法找到相关结果',
+            displayDetails: '显示详细列表',
             resetButtonTitle: '清除查询条件',
+            backButtonTitle: '关闭搜索',
+            noResultsText: '无法找到相关结果',
             footer: {
               selectText: '选择',
               navigateText: '切换',
               closeText: '关闭'
             }
           }
-        },
-        detailedView: true,
-        // 配置搜索逻辑
-        search: function (items, term) {
-          // 只搜索标题
-          const regex = new RegExp(term, 'i')
-          return items.filter(item => {
-            return regex.test(item.title) || 
-                   (item.headings && item.headings.some(heading => 
-                     heading.level <= 2 && regex.test(heading.text)
-                   ))
-          })
         }
-      },
+      }
+    },
+    outline: {
+      level: [2, 3],
+      label: '本页目录'
+    },
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇'
     },
     lastUpdated: {
       text: '最后更新于',
       formatOptions: {
-        dateStyle: 'full',
-        timeStyle: 'medium',
+        dateStyle: 'medium',
+        timeStyle: 'short',
         locale: 'zh-CN'
       }
     },
-    nav: navData,
-    sidebar: sidebar,
-  },
-};
+    editLink: {
+      pattern: 'https://github.com/zhengjingyang/doc/edit/main/docs/:path',
+      text: '在 GitHub 上编辑此页'
+    },
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/zhengjingyang/doc' }
+    ],
+    returnToTopLabel: '回到顶部',
+    sidebarMenuLabel: '菜单',
+    darkModeSwitchLabel: '主题',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式',
+    externalLinkIcon: true
+  }
+}

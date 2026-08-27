@@ -1,0 +1,53 @@
+/**
+ * 轻量自定义：代码块与首页入口间距微调
+ */
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #3b82f6, #06b6d4);
+}
+
+.vp-doc [class*='language-'] {
+  margin: 16px 0;
+}
+
+.doc-nav {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.doc-nav__group {
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  background: var(--vp-c-bg-soft);
+}
+
+.doc-nav__title {
+  margin: 0 0 0.75rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.doc-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.doc-nav__list a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.doc-nav__list a:hover {
+  text-decoration: underline;
+}
+
+.doc-nav__empty {
+  color: var(--vp-c-text-2);
+  font-size: 0.9rem;
+}

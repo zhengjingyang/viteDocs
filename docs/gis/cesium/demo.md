@@ -1,3 +1,7 @@
+---
+title: demo
+order: 1
+---
 # Cesium Demo
 
 项目基于 vue3 + vite + cesium，已实现常见三维动画场
